@@ -1,0 +1,79 @@
+.accordion-container {
+    width: 80%;
+}
+
+.accordion-titulo {
+    position: relative;
+    display: block;
+    padding: 20px;
+    background: rgba(87, 87, 107, .8);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.accordion-titulo-menu {
+    position: relative;
+    display: block;
+    padding: 20px;
+    background: rgba(255, 133, 51, 1);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.accordion-titulo:hover {
+    background: rgba(255, 133, 51, 1);
+}
+
+.accordion-titulo-menu:hover {
+    background: rgba(87, 87, 107, .8);
+}
+
+.accordion-titulo span.toggle-icon:before {
+    content: "+";
+}
+
+.accordion-titulo.open span.toggle-icon:before {
+    content: "-";
+}
+
+.accordion-titulo-menu span.toggle-icon-menu:before {
+    content: "=";
+}
+
+.accordion-titulo span.toggle-icon {
+    position: absolute;
+    top: 8px;
+    right: 20px;
+    font-size: 35px;
+}
+
+.accordion-titulo-menu span.toggle-icon-menu {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 35px;
+}
+
+.accordion-content {
+    display: none;
+    padding: 20px;
+    overflow: auto;
+}
+
+.accordion-content p {
+    margin: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .accordion-titulo {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .accordion-titulo {
+        font-size: 10px;
+    }
+}

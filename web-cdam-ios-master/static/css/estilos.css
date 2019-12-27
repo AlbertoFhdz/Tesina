@@ -1,0 +1,406 @@
+/*Plantilla de estilos del sitio del CDAM de la
+Facultad de Estudios Superiores Acatlán
+
+Autores:
+Flores Hernández Juan Alberto
+
+2019 Facultad de Estudios Superiores Acatlán*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    /*flex para responsive design*/
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+}
+
+header {
+    /*Fondo Gris*/
+    background: rgba(77, 77, 97, 1);
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+.logo1 {
+    max-width: 120px;
+    max-height: 120px;
+}
+
+.logo1 img,
+.logo2 img {
+    width: 80%;
+}
+
+.logo2 {
+    max-width: 120px;
+    max-height: 120px;
+}
+
+nav {
+    width: 100%;
+    /*Fondo Naranja del nav*/
+    background: rgba(255, 133, 51, 1);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    flex-grow: 1;
+    /*Hace que los elementos del nav se distribuyan de manera adecuada*/
+}
+
+nav a:hover {
+    background: rgba(87, 87, 107, 1);
+}
+
+/* Etiquena .accordion-container-menu es para el menu destinado para dispositivos móviles*/
+.accordion-container-menu {
+    display: none;
+}
+
+.galeria {
+    width: 100%;
+    max-width: 1500px;
+    display: flex;
+    height: 700px;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+}
+
+.galeria img {
+    width: 100%;
+    max-width: 1500px;
+    padding: 0px;
+    height: 700px;
+    margin: auto;
+}
+
+.acerca {
+    background: rgba(255, 255, 255, 1);
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    display: flex;
+    flex-flow: row;
+    flex-flow: wrap;
+    padding: 20px;
+}
+
+.informacion {
+    width: 30%;
+    max-width: 600px;
+    font-size: 18px;
+    margin: auto;
+}
+
+.video {
+    width: 60%;
+    max-width: 500px;
+    max-height: 350px;
+    margin: auto;
+}
+
+.actividades {
+    background: rgba(87, 87, 107, .8);
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 25px;
+    font-size: 18px;
+}
+
+.actividades h2,
+.avisos h2,
+.calendario h2,
+.lineamientos h2 {
+    width: 100%;
+    display: flex;
+    font-size: 40px;
+    justify-content: center;
+    align-content: center;
+}
+
+.actividades h2 a{
+    text-decoration: none;
+    color: rgb(0,0,0);
+}
+.actividades p {
+    width: 90%;
+    background: rgba(255, 133, 51, .8);
+    border-radius: 25px;
+    font-size: 20px;
+    padding: 15px;
+    margin: 5px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.actividades p a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.actividad {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.actividad img {
+    width: 90%;
+    max-width: 300px;
+    max-height: 200px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.avisos,
+.lineamientos {
+    background: rgba(255, 255, 255, 1);
+    width: 100%;
+    margin: auto;
+    max-width: 1500px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.frameavisos,
+.framecalendario {
+    width: 80%;
+    margin: auto;
+    max-width: 1000px;
+}
+
+.calendario {
+    background: rgba(87, 87, 107, .8);
+    width: 100%;
+    max-width: 1500px;
+    padding: 10px;
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer {
+    background: rgba(77, 77, 97, 1);
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+
+footer .logos {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    padding: 20px;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.logos img {
+    width: 80%;
+    max-width: 80px;
+    max-height: 80px;
+}
+
+footer .creditos {
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 12px;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    white-space: normal;
+    justify-content: space-between;
+}
+
+.creditos a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+
+}
+
+.ir_arriba {
+    display: none;
+    padding: 5px;
+    background: #024959;
+    border-radius: 80px;
+    color: #fff;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+    .galeria {
+        height: 450px;
+    }
+
+    .galeria img {
+        height: 450px;
+    }
+
+    .informacion {
+        width: 40%;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .video {
+        width: 50%;
+        max-width: 450px;
+        max-height: 300px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .galeria {
+        height: 300px;
+    }
+
+    .galeria img {
+        height: 300px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .informacion {
+        width: 80%;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+
+    .video {
+        width: 80%;
+        max-width: 400px;
+        max-height: 250px;
+        margin: auto;
+    }
+
+    .actividades {
+        flex-wrap: wrap;
+    }
+
+    .actividad {
+        width: 100%;
+    }
+
+    .framecalendario {
+        width: 95%;
+        max-width: 600px;
+        max-height: 400px;
+    }
+
+    .creditos div {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .logo1 img,
+    .logo2 img {
+        width: 90%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .accordion-container-menu {
+        display: block;
+    }
+
+    .accordion-content-menu {
+        display: none;
+        overflow: auto;
+    }
+
+    .accordion-content-menu a {
+        width: 100%;
+        background: rgba(255, 133, 51, 1);
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        border: none;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 0px;
+        flex-grow: 1;
+        overflow: auto;
+    }
+
+    .informacion {
+        width: 80%;
+        max-width: 700px;
+    }
+
+    .video {
+        width: 80%;
+        max-width: 300px;
+        max-height: 150px;
+    }
+
+    .frameaviso {
+        width: 85%;
+        max-width: 400px;
+    }
+
+    .framecalendario {
+        max-width: 450px;
+        max-height: 250px;
+    }
+
+    footer .creditos {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}

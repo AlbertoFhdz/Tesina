@@ -1,0 +1,287 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="UNAM FES Acatlán iOS Development Lab">
+    <meta name="keywords" content="UNAM,FES Acatlán,iOS,MAC,Swift,Xcode">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>iOS Development Lab | Facultad de Estudios Superiores Acatlán</title>
+    <link rel="icon" type="image/png" href="static/medios/favicon.png" sizes="16x16">
+    <link rel="stylesheet" href="static/css/estilos.css">
+    <link rel="stylesheet" href="static/css/desarrollo.css">
+    <link rel="stylesheet" href="static/css/acordeones.css">
+    <!--Fuente proporcionadapor google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <!--Enlace con codigo jquery, Necesario conexión a internet para el enlace a jquery-->
+    <script src="https://code.jquery.com/jquery-2.x-git.js"></script>
+    <!--otro jquery en caso de falla <script src="http://code.jquery.com/jquery-latest.js"></script>-->
+    <script src="static/js/jquery.js"></script>
+</head>
+
+<body>
+    <div class="contenedor">
+        <!-- Contenedor principal para Flexbox-->
+        <header>
+            <!--El header está ocupado solamente por los iconos de la facultad y del laboratorio-->
+            <div class="logo1">
+                <a href="https://www.acatlan.unam.mx"><img src="static/medios/FES_blanco.png" alt="Imagen"></a>
+                
+            </div>
+            <div class="logo3">
+                <a href="#"><img src="static/medios/devlop.png" alt="Imagen"></a>
+            </div>
+            <div class="logo2">
+                <a href="#"><img src="static/medios/favicon.png" alt="Imagen"></a>
+            </div>
+            
+        </header>
+        <!--Menu desplegable para versiones móviles-->
+        <div class="accordion-container-menu">
+            <a href="#" class="accordion-titulo-menu"> <span class="toggle-icon-menu"></span></a>
+            <div class="accordion-content-menu">
+                <a href="index.html#acerca">Acerca</a>
+                <a href="index.html#actividades">Actividades</a>
+                <a href="index.html#avisos">Avisos</a>
+                <a href="index.html#calendario">Calendario</a>
+                <a href="index.html#lineamientos">Lineamientos</a>
+                <a href="orientacion.html" target="_blank">Orientación</a>
+                <a href="index.html#creditos">Contacto</a>
+            </div>
+        </div>
+        <!-- Esta es la sección nav normal-->
+        <nav class="nav">
+            <a href="index.html#acerca">Acerca</a>
+            <a href="index.html#actividades">Actividades</a>
+            <a href="index.html#avisos">Avisos</a>
+            <a href="index.html#calendario">Calendario</a>
+            <a href="index.html#lineamientos">Lineamientos</a>
+            <a href="orientacion.html" target="_blank">Orientación</a>
+            <a href="index.html#creditos">Contacto</a>
+        </nav>
+
+        <section class="galeria">
+            <!-- Área de la galería de imágenes automática-->
+            <img name="presentacion" src="static/medios/IMG_0029.jpg" alt="Galeria de imagenes">
+        </section>
+
+        <section class="acerca" id="acerca">
+            <!-- Sección que brinda información acerca del laboratorio, así como un video de PC Puma-->
+            <section class="informacion">
+                <h2><img src="static/medios/navegacion.svg" width="20px" alt="Imagen"> ¿Qué es el CEDAM?</h2><br>
+                <p align = "justify" >El Centro de Desarrollo de Aplicaciones Móviles (CEDAM) ubicado en la planta baja del edificio A-15 en la FES Acatlán es un laboratorio en el que podrás
+                    aprender a desarrollar aplicaciones móviles para sistemas iOS.</p><br>
+                <hr><br>
+                <h2><img src="static/medios/navegacion.svg" width="20px" alt="Imagen"> ¿Quién puede entrar?</h2><br>
+                <p align = "justify">
+                    Toda nuestra comunidad es bienvenida, nuestro objetivo es compartir el conocimiento sobre el desarrollo de aplicaciones móviles iOS, si quieres desarrollar una aplicación acercate a los integrantes del equipo CEDAM y con gusto podremos ayudarte a volver realidad esa idea. </p><br>
+                <hr><br>
+                <h2><img src="static/medios/navegacion.svg" width="20px" alt="Imagen"> ¿Cómo puedo participar?</h2><br>
+                <p align = "justify">Si quieres formar parte de un taller o curso específico siguenos en Facebook y ahí podrás encontrar información acerca de las convocatorias, fechas e inscripciones de los talleres.</p><br>
+                <hr><br>
+              
+              <!-- Aqui se agrego la encuesta -->
+          
+                <h2><img src="static/medios/navegacion.svg" width="20px" alt="Imagen"> Encuesta de calidad.</h2><br>
+                <p align="justify">Nos interesa conocer tu estancia en el laboratorio te pedimos ingresar en el siguiente link. De esta manera podemos mejorar tu experiencia en el laboratorio.
+<a href="https://forms.gle/EiaFUJM4wPknUvSH6">Encuesta</a></p><br>
+            </section>
+          
+          
+            <!-- Este iframe conecta al video de PC Puma-->
+            <iframe height="350px" class="video" src="https://www.youtube.com/embed/7FuiKas-2WQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        <section class="actividades" id="actividades">
+            <!-- Sección que explica un poco sobre las actividades que se llevan a cabo en el laboratorio, si en un futuro se agregan actividades, basta con agregar un div con clase "actividad" como los que se encuentran a continuación-->
+            <div class="actividad">
+                <h2>Cursos</h2><br>
+                <p align = "justify">Se impartirán cursos relacionados con la programación para toda nuestra comunidad.</p>
+                <img src="static/medios/47352075_2479711895378853_4628845877358755840_n.jpg" alt="Imagen">
+            </div>
+            <div class="actividad">
+                <h2><a href="talleres.html">Talleres</a></h2><br>
+                <p><a href="talleres.html">Forma parte de los talleres que se llevan a cabo en el laboratorio. </a></p>
+                <img src="static/medios/47363858_2479717752044934_4541361220355096576_n.jpg" alt="Imagen">
+            </div>
+            <div class="actividad">
+                <h2>Open Lab</h2><br>
+                <p align = "justify">Es una modalidad en la que puedes aprender a programar de manera autodidacta.</p>
+                <img src="static/medios/47181745_2479717745378268_1548488490784653312_n.jpg" alt="Imagen">
+            </div>
+          
+        </section>
+
+        <section class="avisos" id="avisos">
+            <!-- Esta sección está destinada para avisos-->
+            <h2>Avisos</h2><br>
+            <!--Este es el iframe que conecta con una hoja de calculo para presentar los avisos, es Importante que al hacer un cambio en la hoja se conserven las propiedades "widget=false&amp", "chrome=false", "width=500", "height=400" y class="frameaviso" ya que de estos atributos depende la presentación del iframe-->
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQX0cO8WUWOCq55Iwra5nTNGwtcB0meAF9jj-tDTPhFeMwBtB67cpZeadIVon5tfZ-EAElZpt-JCg3R/pubhtml?widget=false&amp;chrome=false" width="500" height="400" class="frameaviso"></iframe>
+        </section>
+
+        <section class="calendario" id="calendario">
+            <!-- Seccón contenedora del calendario proporcionado por un iframe de Google Calendar-->
+            <h2>Calendario</h2>
+            <!-- Este es el iframe que conecta con google calendar IMPORTANTE que al hacer cambio de cuenta gmail es necesario reconfigurar el enlace del iframe, podrás hacerlo en https://calendar.google.com/calendar/embedhelper-->
+            <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;hl=es&amp;bgcolor=%23ff6600&amp;src=cdamacatlan01%40gmail.com&amp;color=%23AB8B00" width="800" height="600" class="framecalendario"></iframe>
+        </section>
+
+        <section class="lineamientos" id="lineamientos">
+            <h2>Lineamientos</h2>
+            <div class="accordion-container">
+                <a href="index.html#lineamientos" class="accordion-titulo">Capítulo I. Usuarios y servicios de las Aulas de Cómputo<span class="toggle-icon"></span></a>
+                <div class="accordion-content">
+                    <p align = "justify"><b>Artículo 1.</b> Se consideran Aulas de Cómputo los espacios físicos ubicados en los salones A-111, A-421, A-723 y A-1501, así como los recursos de hardware, software, conectividad y mobiliario ubicados en el interior de las salas antes mencionadas, que la FES Acatlán ofrece como apoyo a las actividades de enseñanza/aprendizaje.</p>
+                    <p align = "justify"><b>Artículo 2.</b> Se consideran cinco tipos de usuarios de las Aulas de Cómputo a) estudiantes que se encuentren matriculados; b) profesores, coordinadores y directivos; c) empleados de la institución cuya vinculación con la FES Acatlán se encuentre vigente; d) externos; y e) usuarios diferentes a los anteriores (capacitaciones específicas, cursos de educación continua, etc.).</p>
+                    <p align = "justify"><b>Artículo 3.</b> La institución ofrecerá a los usuarios de las Aulas de Cómputo los recursos de hardware, software, conectividad y mobiliario disponibles, para que sirvan como apoyo en sus actividades académicas. El uso académico tiene prioridad sobre cualquier otra actividad.</p>
+                    <p align = "justify"><b>Artículo 4.</b> La administración de los recursos de las Aulas de Cómputo es responsabilidad del Programa de Matemáticas Aplicadas y Computación (MAC) en conjunción con el Centro de Desarrollo Tecnológico (CeDeTec) de la FES Acatlán. Las Aulas de Cómputo deben estar en todo momento bajo la responsabilidad del Coordinador del Programa de MAC, o de un docente o del encargado del Aula designado por la División de Matemáticas e Ingeniería.</p>
+                    <p align = "justify"><b>Artículo 5.</b> Todos los usuarios deben contar con autorización de la División de Matemáticas e Ingeniería o del Programa de MAC, de Actuaría o de Ingeniería para hacer uso de las Aulas de Cómputo en el horario de lunes a viernes de 09:00 a 21:00 horas (para hacer uso de las instalaciones fuera del horario antes mencionado deberá solicitarse por escrito al Programa de MAC, instancia que emitirá la resolución en un periodo no mayor a tres días).</p>
+                    <p align = "justify"><b>Artículo 6.</b> La utilización por parte de los usuarios de las Aulas de Cómputo se hará de acuerdo con las condiciones establecidas en el presente reglamento.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-container">
+                <a href="index.html#lineamientos" class="accordion-titulo">Capítulo II. Normas básicas para la utilización de las Aulas de Cómputo <span class="toggle-icon"></span></a>
+                <div class="accordion-content">
+                    <p align = "justify"><b>Artículo 6.</b> Los usuarios únicamente pueden utilizar los servicios para los cuales están autorizados; de lo contrario, no se permitirá: el acceso directo a los equipos y servidores. </p>
+                    <p align = "justify"><b>Artículo 7.</b> Bajo ninguna circunstancia se podrá utilizar el nombre (login) o clave de acceso (password) de otro usuario. Cada usuario debe permitir su plena identificación en la Red Institucional. </p>
+                    <p align = "justify"><b>Artículo 8.</b> Los usuarios de los recursos de las Aulas de Cómputo, deben tener presente que sus acciones pueden afectar a la institución y a otros usuarios. Un usuario no podrá interferir en los procesos computacionales de la Institución con acciones deliberadas que puedan afectar el desempeño y seguridad de los recursos informáticos o de la información.</p>
+                    <p align = "justify"><b>Artículo 9.</b> Las clases que requieran el uso permanente de un Aula de Cómputo durante todo el periodo académico lectivo, serán solicitadas directamente por el jefe de Programa o por el Jefe de Sección académico y se asignarán en el orden riguroso a la recepción de dicha solicitud, dando preferencia a las asignaturas en las que se trabaja con integración de las TIC. </p>
+                    <p align = "justify"><b>Artículo 10.</b> El uso de las Aulas de Cómputo y de los servicios de Red es para fines exclusivamente académicos. Está prohibido usar los equipos de las Aulas y los servicios de Red para jugar, enviar o recibir información pornográfica o de propósito netamente comercial. Por comodidad de los usuarios, sólo se permite el uso simultáneo de un computador a un máximo de dos (2) personas.</p>
+                    <p align = "justify"><b>Artículo 11.</b> La utilización de los recursos de las Aulas de Cómputo en horario diferente al escolar debe estar debidamente autorizadas por el personal administrativo de la FES Acatlán.
+                    </p>
+                    <p align = "justify"><b>Artículo 12.</b> En caso de pérdida, daño o deterioro de los equipos utilizados, el usuario debe reportar inmediatamente esta situación al encargado de la Sala para proceder a su reparación. Si se determina que el daño fue causado por mal manejo o maltrato del equipo, el usuario responsable debe encargarse de la reparación o nueva adquisición del mismo.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-container">
+                <a href="index.html#lineamientos" class="accordion-titulo">Capítulo III. De los deberes y derechos de los usuarios<span class="toggle-icon"></span></a>
+                <div class="accordion-content">
+                    <p align = "justify"><b>Artículo 13.</b> Son deberes de los usuarios:<br>
+                        1. Reservar las salas con al menos una semana de anticipación, de conformidad con las políticas establecidas por la División de Matemáticas e Ingeniería y por el Programa de MAC. La asignación de equipos se ajustará a la disponibilidad de equipos y a la atención de los usos prioritarios de las Aulas.<br>
+                        2. El docente o responsable de una clase no debe abandonar en ningún momento el Aula de Cómputo sin dar aviso previo al encargado de la misma.<br>
+                        3. En caso de requerir algún software especial, el profesor debe solicitar por escrito a su jefatura la instalación con al menos una semana de anticipación, indicando en cuántos y en cuáles equipos del Aula de Cómputo se requiere.<br>
+                        4. Cumplir puntualmente con los horarios de servicio establecidos para trabajar en las Aulas de Cómputo.<br>
+                        5. Cuidar que se haga buen uso de los recursos de hardware, de software y de mobiliario que se encuentran disponibles en las Aulas de Cómputo.<br>
+                        6. Informar inmediatamente al encargado de la sala sobre cualquier irregularidad en el funcionamiento del equipo asignado (hardware, software o conectividad).<br>
+                        7. Acatar las instrucciones y procedimientos especiales establecidos por la División de Matemáticas e Ingeniería y el Programa de MAC para hacer uso de los recursos de las Aulas de Cómputo.<br>
+                        8. Abstenerse de fumar y consumir alimentos y/o bebidas al interior de las Aulas de Cómputo.<br>
+                        9. Mantener la disciplina y no interferir con el trabajo de los demás usuarios de las Aulas de Cómputo.<br>
+                        10. Los estudiantes que requieran salir del Aula durante la clase, deberán solicitar autorización al profesor que esté a cargo en ese momento.<br>
+                        11. Abstenerse de recibir visitas ajenas a la clase durante la estancia en las Aulas de Cómputo.<br>
+                        12. Procurar el debido orden, limpieza y cuidado de los equipos al terminar el uso, esto incluye apagar los equipos adecuadamente, dejar el espacio de trabajo limpio y ordenado.<br>
+                        13. En el caso de práctica de grupo, el profesor debe responder por el cuidado general y el buen manejo de la sala y sus equipos durante la clase.<br>
+                        14. Almacenar correctamente su información y hacerlo únicamente en las carpetas destinadas para ese fin (no utilizar los equipos para almacenar información personal ajena al interés académico).<br>
+                        15. Cuidar sus objetos personales, ya que los encargados de las Aulas de Cómputo no se hacen responsables por la pérdida de los mismos.<br>
+                        16. Esta prohibido ingresar animales a las Aulas de Cómputo.<br>
+                        17. No se autoriza compilar y ejecutar programas de dominio público cuya función sea obtener privilegios mayores a los asignados.<br>
+                    </p>
+                    <p align = "justify"><b>Artículo 14.</b> Son derechos de los usuarios:<br>
+                        1. Recibir trato respetuoso por parte del personal a cargo del Aula de Cómputo.<br>
+                        2. Recibir asistencia técnica en cuanto a hardware, software y conectividad se refiera, de acuerdo con las disposiciones definidas por el Programa de MAC y CeDeTec.<br>
+                        3. Disponer de equipos en pleno funcionamiento en las Aulas de Cómputo.<br>
+                        4. Hacer uso del hardware, software y conectividad durante el tiempo que se le haya designado.<br>
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-container">
+                <a href="index.html#lineamientos" class="accordion-titulo">Capítulo IV. Préstamo de Equipos <span class="toggle-icon"></span></a>
+                <div class="accordion-content">
+                    <p align = "justify"><b>Artículo 15.</b> Los equipos de Informática (proyectores de video, bocinas, adaptadores etc.) sólo se prestan para usarse dentro de las instalaciones de la FES Acatlán, cualquier excepción debe ser autorizada directamente por la División de Matemáticas e Ingeniería o por el Programa de MAC. El préstamo a estudiantes, de cualquier equipo, deberá autorizarse a través de un docente que asumirá la responsabilidad solidaria. </p>
+                </div>
+            </div>
+            <div class="accordion-container">
+                <a href="index.html#lineamientos" class="accordion-titulo">Capítulo V. Causales de Sanción <span class="toggle-icon"></span></a>
+                <div class="accordion-content">
+                    <p align = "justify"><b>Artículo 18.</b> Son causa de sanción las siguientes acciones:<br>
+                        1. Utilizar los recursos de las Aulas de Cómputo para fines no académicos, tales como, navegar en páginas no autorizadas, reenviar cadenas de correo electrónico, reproducir videos o música cuando estos no sean parte de una clase, etc.<br>
+                        2. No denunciar a otros usuarios que estén utilizando los recursos de las Aulas de Cómputo para fines no académicos.<br>
+                        3. Utilizar el código de acceso de otro(s) usuario(s) sin la debida autorización.<br>
+                        4. Violar o intentar violar los sistemas de seguridad de máquinas locales o remotas.<br>
+                        5. Perturbar el trabajo de otros usuarios con comportamientos interferentes. <br>
+                        6. No respetar los horarios de servicio establecidos en el artículo 5.<br>
+                        7. Desacatar alguna de las normas básicas para la utilización de las Aulas de Cómputo descritas en el Capítulo II del presente.<br>
+                        8. Incumplir alguno de los deberes enumerados en el Artículo 13 del presente.<br>
+                        9. Desacatar los procedimientos establecidos por la División de Matemáticas e Ingeniería y el Programa de MAC para el uso de las Aulas de Cómputo.<br>
+                        10. Robar o cambiar equipos, partes o componentes de la dotación de hardware, software y conectividad de las Aulas de Cómputo.<br>
+                        11. Utilizar Chats, IRC y programas de comunicación en tiempo real, sin la debida autorización y sin la presencia de un profesor.<br>
+                        12. Ejecutar juegos de video de cualquier tipo, sin la debida autorización y sin la presencia de un profesor; esto aplica también para juegos en línea o de red.<br>
+                        13. Descargar o reproducir archivos de video o de audio, sin la debida autorización y sin la supervisión de un profesor.<br>
+                        14. Descargar cualquier software de Internet, sin la debida autorización y sin la supervisión de un profesor.<br>
+                        15. Instalar o desinstalar software en equipos y servidores de las Aulas de Cómputo, sin la debida autorización y sin la presencia de un profesor.<br>
+                        16. En calidad de profesor, desatender el Aula de Cómputo después de haber autorizado a algún usuario para realizar las acciones contempladas en los puntos 11 al 15 del presente Artículo.
+                        17. Maltrato deliberado a los recursos de las Aulas de Cómputo.<br>
+                        18. Modificar la configuración de los equipos, así como alterar el software instalado en los mismos.<br>
+                        19. Borrar archivos de otros usuarios.<br>
+                        20. Infectar, de manera intencional, los computadores con Virus, Spyware o Malware.<br>
+                        21. Alterar o dañar las etiquetas de identificación o de inventario de cualquier equipo o mobiliario.<br>
+                        22. Mover equipo o mobiliario de un lugar a otro o de un área a otra.<br>
+                </div>
+            </div>
+            <div class="accordion-container">
+                <a href="index.html#lineamientos" class="accordion-titulo">Capítulo VI. Sanciones <span class="toggle-icon"></span></a>
+                <div class="accordion-content">
+                    <p align = "justify"><b>Artículo 19.</b> La FES Acatlán podrá imponer a los usuarios que incurran en algunas de las acciones enumeradas en el Artículo 18 del presente, las siguientes sanciones:<br>
+                        1. Amonestación verbal. Será impuesta por el encargado de la Sala de Informática, dependiendo de la gravedad de la falta.<br>
+                        2. Amonestación escrita. La harán el jefe de la División de Matemáticas e Ingeniería o el jefe de Programa de Matemáticas Aplicadas y Computación mediante comunicación escrita, de la cual quedará copia en la hoja de vida del usuario.<br>
+                        3. Suspensión de clases por uno o más días a usuarios en calidad de estudiantes. La impondrá el Director de la FES Acatlán a solicitud del jefe de la División de Matemáticas e Ingeniería o del jefe de Programa de Matemáticas Aplicadas y Computación.<br>
+                        4. Matricula condicional a usuarios en calidad de estudiantes. La impondrá el Director, dependiendo de la gravedad de la falta.<br>
+                        5. Cancelación temporal. Será impuesta a los usuarios externos y tipo e (Artículo 2) por el encargado del Aula de Cómputo respectiva, dependiendo de la gravedad de la falta.<br>
+                    </p>
+                    <p align = "justify"><b>Artículo 20.</b> El procedimiento para la aplicación de las sanciones mencionadas a los estudiantes, se regirá por las normas y lineamientos de la Universidad. </p>
+                    <p><b>Artículo 21.</b> Cualquier situación no prevista en el presente, la resolverá la División de Matemáticas e Ingeniería junto con el Programa de MAC de acuerdo con las normas y lineamientos de la Universidad.</p>
+                    <p><b>Notas aclaratorias.</b> Dada la naturaleza del presente, su conocimiento y cumplimiento son obligatorios para todos los usuarios del equipo de cómputo. Su desconocimiento no podrá ser utilizado como excusa para evitar las sanciones correspondientes.<br>
+                        Las Aulas de Cómputo son monitoreadas con el objeto de supervisar la seguridad de los equipos.
+                        Las sugerencias o inconformidades con respecto a las instalaciones del laboratorio o el comportamiento del personal de este, deberán ser entregadas por escrito en la Jefatura del Programa de Matemáticas Aplicadas y Computación (edificio A2, planta baja) o en la División de Matemáticas e Ingeniería (edificio de Seminarios, planta alta).
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <section class="logos">
+                <!-- Esta sección esta destinada a contener los logos que se muestran en el pie de página-->
+                <a href="https://www.unam.mx"><img src="static/medios/UNAM_blanco.png" alt="Imagen"></a>
+                <a href="#"><img src="static/medios/favicon.png" alt="Imagen"></a>
+                <a href="https://www.acatlan.unam.mx"><img src="static/medios/FES_blanco.png" alt="Imagen"></a>
+            </section>
+            <section class="creditos" id="creditos">
+                <!-- Sección que va dirigida a los créditos, mostrada en el pie de página, IMPORTANTE esta sección quedará estática con excepción de cambios en los correos electrónicos-->
+                <div>
+                    <h2>Responsables</h2><br>
+                    <p>Coordinación del Programa de Matemáticas Aplicadas y Computación</p>
+                    <p>mac@apolo.acatlan.unam.mx</p><br>
+                    <p>Coordinación del CEDAM Acatlán</p>
+                    <p>eduardo.loza@apolo.acatlan.unam.mx</p><br>
+                    <p>E-mail del laboratorio:</p>
+                    <p>cdamacatlan03@gmail.com</p>
+                </div>
+                <div>
+                    <h2>Dirección</h2><br>
+                    <a href="https://www.google.com.mx/maps/search/UNAM+FES+Acatlán/@19.484867,-99.2490208,16z">
+                        <p>UNAM FES Acatlán edificio A-15 planta baja,<br> Avenida Alcanfores y San Juan Totoltepe s/n,<br>Sta Cruz Acatlan, 53150 Naucalpan de Juárez, Méx.</p>
+                    </a><br>
+                    <a href="desarrollo.html" target="_blank">
+                        <h2>Desarrollo</h2>
+                    </a><br>
+                    <a href="https://www.facebook.com/CEDAMIOS/" target="_blank" ><img src="static/medios/facebook.png"> 
+                    </a>
+                    <a href="https://www.instagram.com/cedamiosfesacatlan/?hl=es-la" target="_blank"><img src="static/medios/instagram.png"></a>
+                    <a href="https://twitter.com/CDAMIOS?s=07&fbclid=IwAR0RLwJhaZEq2wkutO2Pp73EcALy0Ni-Xsg2NIr_Q0NSDRpUHIVjfVoHsPU" target="_blank"><img src="static/medios/twitter.png"></a>
+                </div>
+                <div class="derechos">
+                    <p id="p1"> Hecho en México, todos los derechos reservados 2019.</p>
+                    <p id="p2"> Esta página puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile, se cite la fuente completa y su dirección electrónica.</p>
+                    <p id="p3">De otra forma,requiere permiso previo por escrito de la institución.</p>
+                </div>
+            </section>
+            <!-- Etiqueta o boton para regresar al inicio de la página-->
+            <span class="ir_arriba">
+                <img src="static/medios/flecha-hacia-arriba.png" alt="Imagen">
+            </span>
+        </footer>
+    </div>
+</body>
+
+</html>
+                    
